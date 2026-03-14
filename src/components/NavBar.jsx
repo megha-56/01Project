@@ -2,7 +2,10 @@ import React from "react";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
+import { FaGear } from "react-icons/fa6";
+
+
 
 const NavBar=()=>{
     return( 
@@ -16,11 +19,14 @@ const NavBar=()=>{
             
         // </div>
         <div className="bg-white flex justify-around h-20 border-b-2 items-center">
-           <div className="text-2xl font-bold">Beginner Dev</div> 
-           <div className="flex justify-around w-[20%]">
-              <Link to='/'>Home</Link>
-              <Link to='/about'>About</Link>
-             <Link to='/contact'>Contact</Link>
+           <div className="text-2xl font-bold flex items-center gap-1 ">
+              <div><FaGear className="text-blue-600 text-3xl h-8.5 "/></div>
+              <div>BEGINER<span className="text-blue-600">DEV</span></div>
+           </div> 
+           <div className="flex justify-around w-[20%] text-grey-800 font-medium ">
+              <NavLink to='/' className={({isActive})=>isActive?"text-blue-600":""}>Home</NavLink>
+              <NavLink to='/about' className={({isActive})=>isActive?"text-blue-600":""}>About</NavLink>
+             <NavLink to='/contact' className={({isActive})=>isActive?"text-blue-600":""}>Contact</NavLink>
            </div>
         </div>
     )
