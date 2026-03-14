@@ -10,18 +10,18 @@ const Contact=()=>{
             <div className="flex justify-center mt-5">
             <form  className=" ml-20">
                 <div>
-                    <label>Name</label><br/>
-                    <input  className="bg-white border rounded w-150 pl-2" />
+                    <label for="Name">Name</label><br/>
+                    <input  id="Name" placeholder="Enter Your Name here" className="bg-white border rounded w-150 pl-2" />
                 </div>
                 <br/>
                 <div>
-                    <label>Email Address</label><br/>
-                    <input  className="bg-white border rounded w-150 pl-2"/>
+                    <label for="E-mail">Email Address</label><br/>
+                    <input id="E-mail" placeholder="E-mail" className="bg-white border rounded w-150 pl-2"/>
                 </div>
                 <br/>
                 <div>
-                    <label>Message</label><br/>
-                    <input  className="bg-white border rounded w-150 h-20 pl-2"/>
+                    <label for="Message">Message</label><br/>
+                    <input id="Message" placeholder="Type Something here" className="bg-white border rounded w-150 h-20 pl-2"/>
                 </div>
                 <br/>
                 <button className="bg-blue-500 text-white h-10 border rounded w-150 cursor-pointer">submit</button>
