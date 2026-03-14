@@ -11,20 +11,20 @@ const Contact=()=>{
             <form  className=" ml-20">
                 <div>
                     <label>Name</label><br/>
-                    <input  className="bg-white border rounded w-150" />
+                    <input  className="bg-white border rounded w-150 pl-2" />
                 </div>
                 <br/>
                 <div>
                     <label>Email Address</label><br/>
-                    <input  className="bg-white border rounded w-150"/>
+                    <input  className="bg-white border rounded w-150 pl-2"/>
                 </div>
                 <br/>
                 <div>
                     <label>Message</label><br/>
-                    <input  className="bg-white border rounded w-150 h-20"/>
+                    <input  className="bg-white border rounded w-150 h-20 pl-2"/>
                 </div>
                 <br/>
-                <button className="bg-blue-500 text-white h-10 border rounded w-150">submit</button>
+                <button className="bg-blue-500 text-white h-10 border rounded w-150 cursor-pointer">submit</button>
                 
             </form>
             </div>
